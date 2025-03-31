@@ -1,0 +1,38 @@
+VIRTUAL ENVIRONMENT INSTALLATION
+1. Install virtualenv by going to your folder via command prompt, type pip install -r requirements.txt
+2. Activate the virtual environment, assuming same level as before, type activate name_of_the_venv\Scripts\activate
+3. Link the virtual environment to your repository via Search in VSC > Enter interpreter path.. > Find.. > Link your virtual environment folder
+
+
+
+Make sure the following libraries are installed and updated:
+dash, dash-bootstrap-components, plotly, pandas, sqlalchemy, psycopg2, flask, pytz, openpyxl
+
+
+Access the application
+1. Open web browser (ie. Chrome)
+2. Enter URL as http://127.0.0.1:8050/
+3. Enter credentials, username: admin and password: 123456
+
+
+PostgreSQL Database Instructions
+1. Make database in PostgreSQL
+2. Use details and take note:
+Database = 271
+Owner = postgres
+
+
+project271, dashboard, import, download Phyton scripts:
+1. Update DB_CONFIG [ "dbname", "user", "password", "host", "port"] according to your database details, or 
+make a database according to the following information:
+    "dbname": '271',
+    "user": 'postgres',
+    "password": '123456',
+    "host": 'localhost',
+    "port": '5434'
+
+FOR dashboard python script ONLY: (USE "Import" feature of the application)
+2. To view map locations, upload the 7eleven_dataset named it as "7eleven" and jollibee_dataset named it as "Jollibee" from files folder
+3. To view population rankings, upload the phl_admpop_adm4_2020_5yr named it as "admpop_gen2020" from files folder
+
+NOTE: Once files are imported, user must automatically see map locations and population rankings
